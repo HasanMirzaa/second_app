@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.teal,
         leading: const Icon(Icons.menu),
         title: const Center(child: Text('First App')),
         actions: const [
@@ -17,6 +17,46 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             onPressed: onSearch,
             icon: Icon(Icons.search),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(
+              color: Colors.red,
+              child: const Text(
+                'First Text',
+                style: TextStyle(color: Colors.white, fontSize: 30.0),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.green,
+              child: const Text(
+                'Second Text',
+                style: TextStyle(color: Colors.white, fontSize: 30.0),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.blue,
+              child: const Text(
+                'Third Text',
+                style: TextStyle(color: Colors.white, fontSize: 30.0),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.amber,
+              child: const Text(
+                'Fourth Text',
+                style: TextStyle(color: Colors.white, fontSize: 30.0),
+              ),
+            ),
           ),
         ],
       ),
