@@ -6,61 +6,43 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.teal,
-        leading: const Icon(Icons.menu),
-        title: const Center(child: Text('First App')),
-        actions: const [
-          IconButton(
-              onPressed: onNotification,
-              icon: Icon(Icons.notification_important)),
-          IconButton(
-            onPressed: onSearch,
-            icon: Icon(Icons.search),
-          ),
-        ],
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: Container(
-              color: Colors.red,
-              child: const Text(
-                'First Text',
-                style: TextStyle(color: Colors.white, fontSize: 30.0),
-              ),
+        appBar: AppBar(
+          backgroundColor: Colors.teal,
+          leading: const Icon(Icons.menu),
+          title: const Center(child: Text('First App')),
+          actions: const [
+            IconButton(
+                onPressed: onNotification,
+                icon: Icon(Icons.notification_important)),
+            IconButton(
+              onPressed: onSearch,
+              icon: Icon(Icons.search),
             ),
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.green,
-              child: const Text(
-                'Second Text',
-                style: TextStyle(color: Colors.white, fontSize: 30.0),
-              ),
-            ),
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.blue,
-              child: const Text(
-                'Third Text',
-                style: TextStyle(color: Colors.white, fontSize: 30.0),
-              ),
-            ),
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.amber,
-              child: const Text(
-                'Fourth Text',
-                style: TextStyle(color: Colors.white, fontSize: 30.0),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
+          ],
+        ),
+        body: Column(
+          children: [
+            Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                const Image(
+                  height: 200.0,
+                  width: 200.0,
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                      'https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg'),
+                ),
+                Container(
+                    color: Colors.black.withOpacity(0.5),
+                    width: 200.0,
+                    padding: const EdgeInsets.symmetric(vertical: 10.0),
+                    child: const Text('Flower',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white))),
+              ],
+            )
+          ],
+        ));
   }
 }
 
