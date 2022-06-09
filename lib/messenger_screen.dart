@@ -71,22 +71,261 @@ class MessengerScreen extends StatelessWidget {
           const SizedBox(
             height: 20.0,
           ),
-          Column(
-            children: [
-              Stack(
-                children: const [
-                  CircleAvatar(
-                    radius: 30.0,
-                    backgroundImage: NetworkImage(
-                        'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
                   ),
-                  CircleAvatar(
-                    radius: 5.0,
-                    backgroundColor: Colors.red,
-                  )
-                ],
-              )
-            ],
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                SizedBox(
+                  width: 60.0,
+                  child: Column(
+                    children: [
+                      Stack(
+                        alignment: AlignmentDirectional.bottomEnd,
+                        children: const [
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                'https://avatars.githubusercontent.com/u/105144242?s=400&v=4'),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.only(
+                                bottom: 3.0, end: 3.0),
+                            child: CircleAvatar(
+                              radius: 7.0,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 6.0,
+                      ),
+                      const Text(
+                        'Hasan Mirza',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
           )
         ]),
       ),
